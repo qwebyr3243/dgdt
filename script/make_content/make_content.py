@@ -42,12 +42,12 @@ def check_path(path):
 
 
 def read_file(input_path):
-    with open(input_path, 'r') as fb:
+    with open(input_path, 'r', encoding='utf-8') as fb:
         return fb.read()
 
 
 def write_file(output_path, output_data):
-    with open(output_path, 'w') as fb:
+    with open(output_path, 'w', encoding='utf-8') as fb:
         fb.write(output_data)
 
 
